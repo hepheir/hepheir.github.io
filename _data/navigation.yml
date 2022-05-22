@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: Home
+    description: Home
+    icon: fas fa-home
+    url: /
+  - title: Git Repository
+    description: Git Repository
+    icon: fas fa-code-branch
+    url: https://github.com/hepheir/hepheir.github.io
+  - title: Categories
+    description: Categories
+    icon: fas fa-bookmark
+    url: /categories/

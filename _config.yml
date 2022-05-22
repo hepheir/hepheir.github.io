@@ -52,3 +52,50 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Minimal Mistakes Settings
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+title_separator: "::"
+subtitle: "기록으로 남기는 공부 블로그" # site tagline that appears below site title in masthead
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Hepheir"
+
+comments:
+  provider: utterances
+  utterances:
+    theme: github-light # "github-light" (default), "github-dark"
+    issue_term: pathname # "pathname" (default)
+    repository: Hepheir/hepheir.github.io
+
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: google
+google:
+  search_engine_id: 0f64ffd396fea8281 # YOUR_SEARCH_ENGINE_ID
+  instant_search: true # false (default), true
+
+analytics:
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: "G-WZ5XL7PJ98"
+    anonymize_ip: false # true, false (default)

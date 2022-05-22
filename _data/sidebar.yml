@@ -1,0 +1,66 @@
+# Site Author
+author:
+    name: "김동주"
+    avatar: "https://avatars.githubusercontent.com/u/19310326" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+    bio: >-
+        Now the die is cast! 🎲
+        <br/>
+        Nothing left to do,
+        <br/>
+        Time along can prove my theories true.
+    location: "In your 🖤"
+    links:
+        - label: "hepheir@gmail.com"
+          icon: "fas fa-fw fa-envelope-square"
+          url: "mailto:hepheir@gmail.com"
+        - label: "Hepheir"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/Hepheir"
+        - label: "hepxheir"
+          icon: "fab fa-fw fa-instagram"
+          url: "https://www.instagram.com/hepxheir/"
+
+categories:
+    - title: Algorithm
+      url: /categories/algorithm/
+      taxonomy: Algorithm
+      children:
+          - title: Algospot
+            url: /categories/algospot/
+            taxonomy: Algospot
+          - title: BAEKJOON Online Judge
+            url: /categories/baekjoon-online-judge/
+            taxonomy: BAEKJOON Online Judge
+    - title: Note
+      url: /categories/note/
+      taxonomy: Note
+      children:
+          - title: Java & Spring & Algorithm
+            url: /categories/java-spring-algorithm/
+            taxonomy: Java & Spring & Algorithm
+    - title: Research
+      url: /categories/research/
+      taxonomy: Research
+      children:
+          - title: EICE Lab
+            url: /categories/eice-lab/
+            taxonomy: EICE Lab
+          - title: Others
+            url: /categories/others/
+            taxonomy: Others
+    - title: Side Project
+      url: /categories/side-project/
+      taxonomy: Side Project
+      children:
+          - title: GitHub Blog
+            url: /categories/github-blog/
+            taxonomy: GitHub Blog
+          - title: Jekyll n Hyde
+            url: /categories/jekyll-n-hyde/
+            taxonomy: Jekyll n Hyde
+          - title: Quoridor
+            url: /categories/quoridor/
+            taxonomy: Quoridor
+          - title: Splendor
+            url: /categories/splendor/
+            taxonomy: Splendor
