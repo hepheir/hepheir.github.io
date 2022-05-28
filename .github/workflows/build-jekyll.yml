@@ -3,16 +3,16 @@ name: Build and Deploy to Github Pages
 on:
   push:
     branches:
-      - master  # Here source code branch is `master`, it could be other branch
+      - master # Here source code branch is `master`, it could be other branch
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
   workflow_call:
     secrets:
       PRIVATE_REPO_ACCESS_TOKEN:
         # https://github.com/Hepheir/hepheir.github.io/settings/secrets/actions
         # Add a secret named "PRIVATE_REPO_ACCESS_TOKEN" on the link above.
-        description: 'A Personal Access Token which can access to private repositories'
+        description: "A Personal Access Token which can access to private repositories"
         required: true
 
 jobs:
@@ -25,19 +25,20 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
           submodules: true
 
+      - name: Update submodule
+        run: |
+          git submodule update --remote
+
       - name: Login as github-actions bot
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Update submodule
-        run: |
-          git submodule update --remote
-
       - name: Apply update to master
         continue-on-error: true
         run: |
           git commit -am "chore(_posts): merge submodules into master
+
 
           [skip actions]
 
@@ -59,14 +60,14 @@ jobs:
         if: ${{ success() }}
         uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
-          provider: 'github'
-          token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }} # It's your Personal Access Token(PAT)
-          repository: ''             # Default is current repository
-          branch: 'gh-pages'         # Default is gh-pages for github provider
-          jekyll_src: './'           # Default is root directory
-          jekyll_cfg: '_config.yml'  # Default is _config.yml
-          jekyll_baseurl: ''         # Default is according to _config.yml
-          bundler_ver: '>=0'         # Default is latest bundler version
-          cname: ''                  # Default is to not use a cname
-          actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          provider: "github"
+          token: "${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}" # It's your Personal Access Token(PAT)
+          repository: "Hepheir/hepheir.github.io" # Default is current repository
+          branch: "gh-pages" # Default is gh-pages for github provider
+          jekyll_src: "./" # Default is root directory
+          jekyll_cfg: "_config.yml" # Default is _config.yml
+          jekyll_baseurl: "" # Default is according to _config.yml
+          bundler_ver: ">=0" # Default is latest bundler version
+          cname: "" # Default is to not use a cname
+          actor: "" # Default is the GITHUB_ACTOR
+          pre_build_commands: "" # Installing additional dependencies (Arch Linux)
