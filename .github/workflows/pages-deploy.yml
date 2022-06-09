@@ -27,6 +27,11 @@ jobs:
         with:
           token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
           fetch-depth: 0  # for posts's lastmod
+          submodules: true
+
+      - name: Update submodule
+        run: |
+          git submodule update --remote
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
