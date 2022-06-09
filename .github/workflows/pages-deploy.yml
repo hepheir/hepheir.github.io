@@ -8,6 +8,14 @@ on:
       - README.md
       - LICENSE
 
+  workflow_call:
+    secrets:
+      PRIVATE_REPO_ACCESS_TOKEN:
+        # https://github.com/Hepheir/hepheir.github.io/settings/secrets/actions
+        # Add a secret named "PRIVATE_REPO_ACCESS_TOKEN" on the link above.
+        description: 'A Personal Access Token which can access to private repositories'
+        required: true
+
 jobs:
   continuous-delivery:
 
@@ -17,6 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
           fetch-depth: 0  # for posts's lastmod
 
       - name: Setup Ruby
