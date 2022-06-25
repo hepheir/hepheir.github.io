@@ -36,6 +36,11 @@ jobs:
         run: |
           git submodule update --remote
 
+      - name: Login as github-actions bot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
       - name: Apply update to master
         continue-on-error: true
         run: |
