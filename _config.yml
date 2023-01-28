@@ -23,14 +23,10 @@ timezone: Asia/Seoul
 
 title: Hepheir # the main title
 
-tagline: git과 함께라면. 난 𝙘𝙤𝙙𝙞𝙣𝙜… 두렵지 않아 # it will display as the sub-title
+tagline: Devlog of Hepheir@gmail.com # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Now the die is cast! 🎲
-  <br/>
-  Nothing left to do,
-  <br/>
-  Time along can prove my theories true.
+  .
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://hepheir.github.io"
@@ -108,7 +104,7 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
-paginate: 20
+paginate: 50
 
 # ------------ The following options are not recommended to be modified ------------------
 
