@@ -80,7 +80,9 @@ theme_mode: null # [light|dark]
 img_cdn: null
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/19310326
+avatar: https://www.gravatar.com/avatar/38ad7d544cb4329679a67e6008cf9c69
+# Note: using gravatar via hashed email addr.
+# to see more, read: https://en.gravatar.com/site/implement/images/
 
 # boolean type, the global switch for ToC in posts.
 toc: true
