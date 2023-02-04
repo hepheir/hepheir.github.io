@@ -3,9 +3,15 @@
 # https://jekyllrb.com/docs/configuration/default/
 # ==============================================================================
 # Where things are
+collections_dir: docs
+collections:
+  education:
+    output: true
+  project:
+    output: true
 
 # Handling Reading
-strict_front_matter: true
+strict_front_matter: false
 
 # Filtering Content
 show_drafts: false
@@ -14,118 +20,17 @@ unpublished: false
 
 # Outputting
 timezone: Asia/Seoul
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 # Markdown Processors
 kramdown:
   show_warnings: true
   math_engine: mathjax
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-# ==============================================================================
 
 # ==============================================================================
 # Theme Configuration
 # ==============================================================================
-
-# ------------------------------------------------------------------------------
-# Chirpy
-# ------------------------------------------------------------------------------
-theme: jekyll-theme-chirpy
-
-url: "https://hepheir.github.io"
-
-title: Hepheir
-description: Devlog of Hepheir@gmail.com # used by seo meta and the atom feed
-tagline: Devlog of Hepheir@gmail.com # it will display as the sub-title
-
-avatar: https://www.gravatar.com/avatar/38ad7d544cb4329679a67e6008cf9c69
-theme_mode: null # [light|dark]
-
-lang: ko-KR
-prefer_datetime_locale: ko
-
-github:
-  username: Hepheir # change to your github username
-twitter:
-  username: null # change to your twitter username
-social:
-  name: 김동주
-  email: hepheir@gmail.com # change to your email address
-  links:
-    - https://github.com/Hepheir
-    - https://www.instagram.com/hepxheir/
-
-google_site_verification: VqXMmWjovzbftQ3Cr6qVWv-8yGU7XPuBr0ptMcdncUA # fill in to your verification string
-google_analytics:
-  id: G-WZ5XL7PJ98 # fill in your Google Analytics ID
-  pv:
-    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path: # the local PV cache data, friendly to visitors from GFW region
-
-img_cdn: null
-
-comments:
-  active: utterances
-  utterances:
-    repo: Hepheir/hepheir.github.io # <gh-username>/<repo>
-    issue_term: pathname # < url | pathname | title | ...>
-
-paginate: 50
-
-# Overrides Jekyll Configuration
-sass:
-  style: compressed
-collections:
-  tabs:
-    output: true
-    sort_by: order
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - tools
-  - README.md
-  - LICENSE
-  - gulpfile.js
-  - node_modules
-  - package*.json
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: "/posts/:year-:month-:day-:title/"
-      math: true
-      mermaid: true
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-  - scope:
-      path: assets/img/favicons
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
