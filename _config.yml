@@ -99,7 +99,7 @@ back_to_top_text: "Back to top"
 mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.4"
+  version: "9.3.0"
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false # show or hide edit this page link
