@@ -25,6 +25,10 @@ defaults:
       path: ""
     values:
       layout: default
+  - scope:
+      path: "asset"
+    values:
+      layout: script
 
 # Markdown Processors
 kramdown:
