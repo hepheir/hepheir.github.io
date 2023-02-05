@@ -55,10 +55,10 @@ aux_links:
 
 # External navigation links
 nav_external_links:
-  - title: GitHub Profile
-    url: https://github.com/Hepheir
   - title: Instagram
     url: https://instagram.com/hepxheir
+  - title: GitHub Profile
+    url: https://github.com/Hepheir
 
 
 just_the_docs:
