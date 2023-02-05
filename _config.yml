@@ -50,13 +50,15 @@ description: Devlog of Hepheir@gmail.com
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "Hepheir on GitHub":
+    - "//github.com/Hepheir"
 
 # External navigation links
 nav_external_links:
   - title: GitHub Profile
     url: https://github.com/Hepheir
+  - title: Instagram
+    url: https://instagram.com/hepxheir
 
 
 just_the_docs:
