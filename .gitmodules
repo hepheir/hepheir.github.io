@@ -2,6 +2,3 @@
 	path = _posts
 	url = https://github.com/Hepheir/hepheir.github.io-posts
 	branch = master
-[submodule "assets/lib"]
-	path = assets/lib
-	url = https://github.com/cotes2020/chirpy-static-assets.git
