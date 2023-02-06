@@ -28,9 +28,22 @@ defaults:
     values:
       layout: post
   - scope:
-      path: "_ps/sw-expert-academy"
+      path: "_project/hepheir.github.io/docs"
+    values:
+      parent: hepheir.github.io
+  - scope:
+      path: "_ps/algospot/docs"
+    values:
+      parent: Algospot
+  - scope:
+      path: "_ps/baekjoon-online-judge/docs"
+    values:
+      parent: Baekjoon Online Judge
+  - scope:
+      path: "_ps/sw-expert-academy/docs"
     values:
       layout: swea
+      parent: SW Expert Academy
   - scope:
       path: "asset"
     values:
