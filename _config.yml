@@ -24,7 +24,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: post
   - scope:
       path: "asset"
     values:
