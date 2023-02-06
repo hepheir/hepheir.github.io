@@ -32,6 +32,10 @@ defaults:
     values:
       parent: hepheir.github.io
   - scope:
+      path: "_project/open-source-contribution/docs"
+    values:
+      parent: Open source contribution
+  - scope:
       path: "_ps/algospot/docs"
     values:
       parent: Algospot
