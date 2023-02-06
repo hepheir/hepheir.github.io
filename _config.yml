@@ -9,6 +9,8 @@ collections:
     output: true
   project:
     output: true
+  ps:
+    output: true
 
 # Handling Reading
 strict_front_matter: false
@@ -85,6 +87,9 @@ just_the_docs:
 
     education:
       name: Education
+
+    ps:
+      name: Problem Solving
 
 # Enable or disable heading anchors
 heading_anchors: true
