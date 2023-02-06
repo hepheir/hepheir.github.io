@@ -28,6 +28,10 @@ defaults:
     values:
       layout: post
   - scope:
+      path: "_ps/sw-expert-academy"
+    values:
+      layout: swea
+  - scope:
       path: "asset"
     values:
       layout: script
