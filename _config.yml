@@ -79,12 +79,12 @@ just_the_docs:
       # Exclude the collection from the search
       # Supports true or false (default)
       # search_exclude: true
-    education:
-      name: Education
-      # nav_fold: true
 
     project:
       name: Project
+
+    education:
+      name: Education
 
 # Enable or disable heading anchors
 heading_anchors: true
