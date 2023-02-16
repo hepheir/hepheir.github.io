@@ -11,6 +11,8 @@ collections:
     output: true
   ps:
     output: true
+  study:
+    output: true
 
 # Handling Reading
 strict_front_matter: false
@@ -48,6 +50,10 @@ defaults:
     values:
       layout: swea
       parent: SW Expert Academy
+  - scope:
+      path: "_study/computer-science/docs"
+    values:
+      parent: Computer Science
   - scope:
       path: "asset"
     values:
@@ -108,6 +114,9 @@ just_the_docs:
 
     education:
       name: Education
+
+    study:
+      name: Study
 
     ps:
       name: Problem Solving
