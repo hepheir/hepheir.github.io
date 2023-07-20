@@ -1,4 +1,4 @@
-[submodule "_posts"]
+[submodule "posts"]
 	path = docs
 	url = https://github.com/Hepheir/hepheir.github.io-posts
 	branch = master
