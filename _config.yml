@@ -121,6 +121,8 @@ just_the_docs:
     ps:
       name: Problem Solving
 
+color_scheme: custom
+
 # Enable or disable heading anchors
 heading_anchors: true
 
