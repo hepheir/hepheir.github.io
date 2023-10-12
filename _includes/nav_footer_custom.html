@@ -1,0 +1,15 @@
+<!-- Recent posts -->
+
+{% assign collection = site.posts %}
+{% assign count = 5 %}
+
+<nav aria-label="Main" class="site-nav">
+    <div class="nav-category">Recent posts</div>
+    <ul class="nav-list">
+        {%- for post in collection limit:count -%}
+        <li class="nav-list-item">
+            <a href="{{ post.url | relative_url }}" class="nav-list-link" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ post.title }}</a>
+        </li>
+        {%- endfor -%}
+    </ul>
+</nav>
