@@ -26,6 +26,7 @@ exclude:
   - scripts/
   - README.md
   - jekyll-theme-hamilton.gemspec
+  - vendor
 
 # Jekyll SEO Tag (Optional)
 # =========================
